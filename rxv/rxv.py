@@ -260,7 +260,7 @@ class RXV(object):
         if self._zones_cache is None:
             xml = self._desc_xml
             self._zones_cache = [
-                e.get("YNC_Tag") for e in xml.findall('.//*[@Func="Subunit"]')
+                e.get("Title_1") for e in xml.findall('.//*[@Func="Subunit"]')
             ]
         return self._zones_cache
 
