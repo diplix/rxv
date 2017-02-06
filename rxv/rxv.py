@@ -261,7 +261,7 @@ class RXV(object):
             xml = self._desc_xml
             self._zones_cache = [
                 #e.get("Title_1") for e in xml.findall('.//*[@Func="Subunit"]')
-                'Main_Zone', 'Zone_B'
+                'Main_Zone','Zone_B'
             ]
         return self._zones_cache
 
